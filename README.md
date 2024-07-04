@@ -11,7 +11,7 @@
       "williamboman/mason.nvim",
       "mfussenegger/nvim-lint",
     },
-    event = { "BufReadPre", "BufNewFile" },
+    event = "VeryLazy",
     config = function()
       require("auto-lint").setup({
         map_lang = {
